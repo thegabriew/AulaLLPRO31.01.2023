@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main (){
+	
+	char f[50]; 
+	int t=0;
+	gets(f);
+	
+	for (int idx=0; idx<50; idx++){
+	if((f[idx]=='a')||(f[idx]=='e')||(f[idx]=='i')||(f[idx]=='o')||(f[idx]=='u')){
+		t = t+1;
+	}
+		if(f[idx]=='\0'){
+		break;
+	}
+	}
+	printf("\n%d",t);
+	
+	return 0;
+}
+
