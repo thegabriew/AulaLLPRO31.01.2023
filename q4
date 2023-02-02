@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<locale.h>
+#include <string.h>
+
+int main (){
+	
+	char txt[100];
+	int i,t;
+	
+	setlocale(LC_ALL,"Portuguese_Brazil");
+	
+	puts("Digite uma frase:");
+	gets(txt);
+	
+	t= strlen(txt); 
+	puts("A frase ao contrário fica:");
+	
+	for(i=t; i>=0; i--) 
+     {
+       printf("%c" ,txt[i]);
+     } 
+	
+	return 0;
+	
+}
