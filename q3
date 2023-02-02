@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+#include<locale.h>
+
+int main() {
+  char f1[100], f2[100];
+  int i, t;
+
+	setlocale(LC_ALL,"Portuguese_Brazil");
+
+	puts("Digite uma frase:");
+	gets(f1);
+
+  t = strlen(f1);
+
+  for (i=0; i<t; i++) {
+    f2[i] = f1[t-i-1];
+  }
+
+  f1[t] = '\0';
+
+	puts("\nA frase original é");
+	puts(f1);
+	puts("\nE ao contrário fica");
+	puts(f2);
+
+	
+	return 0;
+}
