@@ -18,7 +18,7 @@ int main (){
 	
 	for(i=t; i>=0; i--) 
      {
-       printf("%c" ,txt[i]);
+       puts("%s" ,txt[i]);
      } 
 	
 	return 0;
